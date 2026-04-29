@@ -3,15 +3,139 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>GB3</title>
-    <meta name="description" content="GB3 website.">
+    <title>GB3 | Drone R&D Lab</title>
+    <meta
+      name="description"
+      content="GB3 designs and builds mission-ready drones for government, research, and field operations."
+    >
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <main class="hero">
-      <p class="eyebrow">GB3</p>
-      <h1>GB3 Website</h1>
-      <p class="lede">A lightweight GitHub Pages site for GB3.</p>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="GB3 home">
+        <span class="brand-mark">GB3</span>
+        <span>Drone R&D Lab</span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="#capabilities">Capabilities</a>
+        <a href="#systems">Systems</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero section">
+        <div class="hero-copy">
+          <p class="eyebrow">Open robotics. Mission hardware. Built to order.</p>
+          <h1>You need a drone. We will make it.</h1>
+          <p class="lede">
+            GB3 is a drone R&D lab and open-source robotics team building
+            unmanned systems for government, research, public safety, and
+            field operations.
+          </p>
+          <div class="actions">
+            <a class="button primary" href="#contact">Start a build</a>
+            <a class="button secondary" href="#capabilities">See capabilities</a>
+          </div>
+        </div>
+        <div class="flight-card" aria-label="Mission telemetry panel">
+          <div class="radar">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <dl>
+            <div>
+              <dt>Payload</dt>
+              <dd>Modular</dd>
+            </div>
+            <div>
+              <dt>Control</dt>
+              <dd>Autonomous / Pilot</dd>
+            </div>
+            <div>
+              <dt>Stack</dt>
+              <dd>Open where possible</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="section split">
+        <p class="section-kicker">Mission</p>
+        <div>
+          <h2>Rapid drone development for teams with real constraints.</h2>
+          <p>
+            We design, prototype, integrate, and field unmanned aircraft around
+            the mission: sensors, endurance, operating environment, data flow,
+            launch method, recovery, and maintainability.
+          </p>
+        </div>
+      </section>
+
+      <section class="section" id="capabilities">
+        <div class="section-heading">
+          <p class="section-kicker">Capabilities</p>
+          <h2>From concept to flyable system.</h2>
+        </div>
+        <div class="grid cards">
+          <article>
+            <span>01</span>
+            <h3>Custom Airframes</h3>
+            <p>
+              Multirotor, fixed-wing, VTOL, payload-specific platforms, and
+              mission-shaped mechanical design.
+            </p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Autonomy & Control</h3>
+            <p>
+              Flight-control integration, navigation workflows, companion
+              computing, telemetry, and operator interfaces.
+            </p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Payload Integration</h3>
+            <p>
+              Cameras, mapping sensors, comms, embedded compute, special
+              payload mounts, and field-serviceable wiring.
+            </p>
+          </article>
+          <article>
+            <span>04</span>
+            <h3>Open Robotics</h3>
+            <p>
+              Practical use of open-source robotics, simulation, and flight
+              stacks where transparency and adaptability matter.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section systems" id="systems">
+        <div>
+          <p class="section-kicker">Delivery</p>
+          <h2>Built for organizations that cannot buy the right drone off the shelf.</h2>
+        </div>
+        <ul class="system-list">
+          <li>Requirements discovery and mission definition</li>
+          <li>Prototype aircraft and payload integration</li>
+          <li>Ground testing, flight testing, and iteration</li>
+          <li>Documentation, training, and sustainment planning</li>
+        </ul>
+      </section>
+
+      <section class="section contact" id="contact">
+        <p class="section-kicker">Contact</p>
+        <h2>Bring the mission. We will scope the aircraft.</h2>
+        <p>
+          Tell us what the drone needs to carry, where it needs to fly, how long
+          it needs to stay up, and what data needs to come back.
+        </p>
+        <a class="button primary" href="mailto:contact@gb3.pro">contact@gb3.pro</a>
+      </section>
     </main>
   </body>
 </html>
