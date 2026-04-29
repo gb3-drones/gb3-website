@@ -44,7 +44,7 @@ a {
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
-  padding: 1rem clamp(1rem, 5vw, 4rem);
+  padding: 0.75rem clamp(1rem, 5vw, 4rem);
   border-bottom: 1px solid var(--line);
   background: rgba(8, 16, 15, 0.84);
   backdrop-filter: blur(18px);
@@ -59,7 +59,7 @@ a {
 .brand img {
   display: block;
   width: auto;
-  height: 3.25rem;
+  height: clamp(4.25rem, 7vw, 5.75rem);
 }
 
 nav {
@@ -480,6 +480,10 @@ article span {
   nav {
     align-items: flex-start;
     flex-direction: column;
+  }
+
+  .brand img {
+    height: 4.25rem;
   }
 
   .hero,
